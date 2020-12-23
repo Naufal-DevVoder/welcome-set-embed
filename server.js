@@ -30,8 +30,8 @@ client.on('guildMemberAdd',  (member) => {
   
   let embed = new Discord.MessageEmbed()
   .setAuthor(`:aarrow: Hallo Selamat Datang Di ${member.guild.name}`, member.guild.iconURL({dynamic:true}))
-  .addField(':warninggif: Mohon Baca Rules #╿✨、rules')
-  .addField(':warninggif: Perkenalan Diri #╰👤、introduction')
+  .setAuthor(`:warninggif: Mohon Baca Rules #╿✨、rules`)
+  .setAuthor(`:warninggif: Perkenalan Diri #╰👤、introduction`)
   .setColor('BLUE')
   .addField(':aarrow: Members Ke :', member.guild.memberCount')
   ch.send(embed)
