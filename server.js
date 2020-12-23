@@ -29,13 +29,13 @@ client.on('guildMemberAdd',  (member) => {
   let ch = client.channels.cache.get(ch1);
   
   let embed = new Discord.MessageEmbed()
-  .setAuthor(`Welcome to ${member.guild.name}`, member.guild.iconURL({dynamic:true}))
-  .addField('Username:', member.user.tag)
-  .addField('Account created', member.user.createdAt)
-  .setColor('random')
-  .addField('Position', member.guild.memberCount + ' Members')
+  .setAuthor(`:aarrow: Hallo Selamat Datang Di ${member.guild.name}`, member.guild.iconURL({dynamic:true}))
+  .addField(':warninggif: Mohon Baca Rules #╿✨、rules')
+  .addField(':warninggif: Perkenalan Diri #╰👤、introduction')
+  .setColor('BLUE')
+  .addField(':aarrow: Members Ke :', member.guild.memberCount')
   ch.send(embed)
   
 });
 
-client.login(config.token)
+client.login(config."NzkxMjE0MTAwMjMwMzA3ODgw.X-L5jQ.dsZConA2eTQWi3fNWvsLoOPghhc")
